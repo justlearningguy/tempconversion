@@ -1,0 +1,65 @@
+body {
+    margin: 0px;
+    background: hsl(0, 0%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial;
+}
+.main-container {
+    width: fit-content;
+    height: fit-content;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.375);
+}
+#type_form {
+    width: 40%;
+    font-size: 40px;
+}
+#main_h {
+    color: hsl(219, 100%, 62%);
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+}
+#type_of_degree {
+    font-size: 40px;
+    margin-left: 10px;
+}
+#answer {
+    font-size: 40px;
+    color: hsl(219, 100%, 62%);
+    margin-left: 10px;
+}
+.form_container {
+    display: flex;
+    align-items: center;
+}
+label {
+    font-size: 25px;
+    font-weight: bold;
+}
+#submit {
+    padding: 10px;
+    border-radius: 10px;
+    background: hsl(219, 100%, 62%);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+#submit:hover {
+    background: hsl(219, 100%, 52%);
+    
+}
+#alert {
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+}
