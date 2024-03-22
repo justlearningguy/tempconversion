@@ -1,65 +1,75 @@
 body {
-    margin: 0px;
-    background: hsl(0, 0%, 89%);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     height: 100vh;
-    font-family: Arial;
+    background: var(--background);
+    gap: 20px
 }
-.main-container {
-    width: fit-content;
-    height: fit-content;
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.375);
-}
-#type_form {
-    width: 40%;
-    font-size: 40px;
-}
-#main_h {
-    color: hsl(219, 100%, 62%);
+label {
+    color: var(--main-color);
     font-weight: bold;
     font-size: 30px;
-    margin: 0px;
-}
-#type_of_degree {
-    font-size: 40px;
     margin-left: 10px;
+}
+input[type=radio] {
+    height: 25px;
+    width: 25px;
+}
+.inputLabelContainer {
+    display: flex;
+    align-items: center;
+}
+#main_h {
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
 #answer {
     font-size: 40px;
-    color: hsl(219, 100%, 62%);
+    color: white;
+    font-weight: bold;
     margin-left: 10px;
 }
-.form_container {
-    display: flex;
-    align-items: center;
+:root {
+    --main-color: hsl(208, 100%, 50%);
+    --background: #292929;
+    --light-background: #454545;
 }
-label {
-    font-size: 25px;
-    font-weight: bold;
+* {
+    font-family: Arial, sans-serif;
 }
 #submit {
     padding: 10px;
-    border-radius: 10px;
-    background: hsl(219, 100%, 62%);
+    border-radius: 5px;
     color: white;
-    border: none;
     font-weight: bold;
-    font-size: 30px;
-    margin-top: 20px;
+    background: var(--main-color);
     cursor: pointer;
-    width: 100%;
+    border: none;
+    font-size: 30px;
+    width: 220px;
 }
 #submit:hover {
-    background: hsl(219, 100%, 52%);
-    
+    background:  hsl(208, 100%, 60%);
+}
+#submit:active {
+    background:  hsl(208, 100%, 70%);
+}
+#type_form {
+    background: var(--light-background);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
 }
 #alert {
-    color: red;
-    font-weight: bolder;
+    color: rgb(255, 74, 74);
+    font-weight: bold;
+    text-align: center;
     font-size: 30px;
 }
